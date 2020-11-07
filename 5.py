@@ -18,7 +18,8 @@ while True:
         print("Неверный ввод. Введите целое натуральное число")
 
 if var_input in rating_list:
-    rating_list.insert(rating_list.index(var_input), var_input)
+    rating_list.insert(rating_list.index(var_input) +
+                       rating_list.count(var_input), var_input)
 else:
     if var_input > max_rating:
         rating_list.insert(0, var_input)
