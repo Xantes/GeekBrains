@@ -1,5 +1,6 @@
-with open(r"files\file_2.txt", "r", encoding="utf-8") as c_file:
-    array = c_file.readlines()
-    print(f"Количество строк {len(array)}")
-    for rows in array:
-        print(f"Количество символов: {len(rows)}")
+try:
+    with open(r"files\file_2.txt", encoding="utf-8") as r_file:
+        print(
+            f"Количество строк: {len(list(print(f'Количество символов: {len(array)}') for array in r_file.readlines()))}")
+except Exception as e:
+    print(e)
