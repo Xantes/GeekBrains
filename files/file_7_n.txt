@@ -8,6 +8,6 @@
         "firm_6": -16000.0
     },
     {
-        "average_profit": 46000.0
+        "average_profit": 15333.333333333334
     }
 ]

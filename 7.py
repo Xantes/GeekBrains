@@ -1,4 +1,5 @@
-import json
+from json import dumps
+from numpy import mean
 
 array = []
 
@@ -8,9 +9,9 @@ try:
                       float(lines.split()[3]) for lines in r_file})
         r_file.seek(0)
         array.append({'average_profit':
-                      sum([float(el.split()[2]) - float(el.split()[3]) for el in r_file if float(el.split()[2]) > float(el.split()[3])])})
+                      mean([float(el.split()[2]) - float(el.split()[3]) for el in r_file if float(el.split()[2]) > float(el.split()[3])])})
 
-        print(json.dumps(array, sort_keys=True, indent=4), file=w_file)
+        print(dumps(array, sort_keys=True, indent=4), file=w_file)
 
 
 except Exception as e:
