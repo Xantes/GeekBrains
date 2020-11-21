@@ -14,7 +14,6 @@ class Car():
     def go(self):
         while self.speed < self.max_speed:
             self.speed += 1
-            sleep(1)
 
     def stop(self):
         while self.speed > 0:
@@ -22,27 +21,28 @@ class Car():
 
     def change_direction(self, direction):
         self.direction = direction
+        return f"Машина движется в направлении {self.direction}"
 
     def show_speed(self):
         return self.speed
 
 
 class TownCar(Car):
-    max_speed = 60
+    allowed_speed = 60
 
     def show_speed(self):
-        if self.speed > self.max_speed:
-            return f"Превышение скорости на {self.speed - self.max_speed} км."
+        if self.speed > self.allowed_speed:
+            return f"Превышение скорости на {self.speed - self.allowed_speed} км."
         else:
-            return self.speed
+            return self.speed, super().max_speed
 
 
 class WorkCar(TownCar):
-    max_speed = 40
+    allowed_speed = 40
 
 
 class SportCar(Car):
-    max_speed = 40
+    max_speed = 240
 
 
 class PoliceCar(Car):
@@ -61,3 +61,7 @@ police_car = PoliceCar('policecar')
 
 print(work_car.speed, work_car.max_speed)
 print(town_car.speed, town_car.max_speed)
+work_car.go()
+print(work_car.show_speed())
+print(work_car.change_direction('Север'))
+print(police_car.color)
