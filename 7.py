@@ -1,0 +1,29 @@
+"""
+Создать (не программно) текстовый файл, в котором каждая строка должна содержать данные о фирме: название, форма собственности, выручка, издержки.
+Пример строки файла: firm_1 ООО 10000 5000.
+Необходимо построчно прочитать файл, вычислить прибыль каждой компании, а также среднюю прибыль. Если фирма получила убытки, в расчет средней прибыли ее не включать.
+Далее реализовать список. Он должен содержать словарь с фирмами и их прибылями, а также словарь со средней прибылью. Если фирма получила убытки, также добавить ее в словарь (со значением убытков).
+Пример списка: [{“firm_1”: 5000, “firm_2”: 3000, “firm_3”: 1000}, {“average_profit”: 2000}].
+Итоговый список сохранить в виде json-объекта в соответствующий файл.
+Пример json-объекта:
+[{"firm_1": 5000, "firm_2": 3000, "firm_3": 1000}, {"average_profit": 2000}]
+"""
+
+from json import dumps
+from numpy import mean
+
+array = []
+
+try:
+    with open("files\\file_7.txt", encoding="utf-8") as r_file, open("files\\file_7_n.txt", "w", encoding="utf-8") as w_file:
+        array.append({lines.split()[0]: float(lines.split()[2]) -
+                      float(lines.split()[3]) for lines in r_file})
+        r_file.seek(0)
+        array.append({'average_profit':
+                      mean([float(el.split()[2]) - float(el.split()[3]) for el in r_file if float(el.split()[2]) > float(el.split()[3])])})
+
+        print(dumps(array, sort_keys=True, indent=4), file=w_file)
+
+
+except Exception as e:
+    print(e)
