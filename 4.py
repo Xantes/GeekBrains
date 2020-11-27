@@ -1,3 +1,11 @@
+"""
+Создать (не программно) текстовый файл со следующим содержимым:
+One — 1
+Two — 2
+Three — 3
+Four — 4
+"""
+
 from translate import Translator
 
 translate = Translator(to_lang="ru")
