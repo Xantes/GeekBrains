@@ -1,0 +1,26 @@
+{
+    "datetime": "2020.12.02 18:24:18",
+    "direction": "Receive",
+    "expendables": "q2612a",
+    "manufacturer": "Hp",
+    "model": "1022",
+    "quantity": 2
+}
+{
+    "datetime": "2020.12.02 18:24:18",
+    "direction": "Receive",
+    "dpi": 300,
+    "manufacturer": "Cannon",
+    "model": "MF50",
+    "quantity": 4
+}
+{
+    "datetime": "2020.12.02 18:24:18",
+    "direction": "Issue",
+    "dpi": 300,
+    "manufacturer": "Cannon",
+    "model": "MF50",
+    "owner": "Albert Hoffman",
+    "quantity": 1,
+    "room": "112 Room"
+}

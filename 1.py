@@ -13,7 +13,7 @@ class Data():
     def data_validate(input_var):
         try:
             dt.strptime(input_var, '%d-%m-%Y')
-        except Exception as e:
+        except Exception:
             return "Неверный формат даты. Повторите ввод в формате ДД-ММ-ГГГГ"
         else:
             return True
