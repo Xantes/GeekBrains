@@ -24,3 +24,89 @@
     "quantity": 1,
     "room": "112 Room"
 }
+{
+    "datetime": "2020.12.04 16:15:25",
+    "direction": "Receive",
+    "expendables": "q2612a",
+    "manufacturer": "Hp",
+    "model": "1022",
+    "quantity": 2
+}
+{
+    "datetime": "2020.12.04 16:17:40",
+    "direction": "Receive",
+    "expendables": "q2612a",
+    "manufacturer": "Hp",
+    "model": "1022",
+    "quantity": 2
+}
+{
+    "datetime": "2020.12.04 16:17:40",
+    "direction": "Receive",
+    "dpi": 300,
+    "manufacturer": "Cannon",
+    "model": "MF50",
+    "quantity": 4
+}
+{
+    "datetime": "2020.12.04 16:17:40",
+    "direction": "Issue",
+    "dpi": 300,
+    "manufacturer": "Cannon",
+    "model": "MF50",
+    "owner": "Albert Hoffman",
+    "quantity": 1,
+    "room": "112 Room"
+}
+{
+    "datetime": "2020.12.04 16:30:06",
+    "direction": "Receive",
+    "expendables": "4",
+    "manufacturer": "2",
+    "model": "3",
+    "quantity": 2
+}
+{
+    "datetime": "2020.12.04 16:30:06",
+    "direction": "Receive",
+    "dpi": 300,
+    "manufacturer": "Cannon",
+    "model": "MF50",
+    "quantity": 4
+}
+{
+    "datetime": "2020.12.04 16:30:06",
+    "direction": "Issue",
+    "dpi": 300,
+    "manufacturer": "Cannon",
+    "model": "MF50",
+    "owner": "Albert Hoffman",
+    "quantity": 1,
+    "room": "112 Room"
+}
+{
+    "datetime": "2020.12.04 16:33:57",
+    "direction": "Receive",
+    "expendables": "4",
+    "manufacturer": " 2",
+    "model": "3",
+    "quantity": "5"
+}
+{
+    "datetime": "2020.12.04 16:33:57",
+    "direction": "Receive",
+    "dpi": 300,
+    "manufacturer": "Cannon",
+    "model": "MF50",
+    "quantity": 4
+}
+{
+    "datetime": "2020.12.04 16:33:57",
+    "direction": "Issue",
+    "dpi": 300,
+    "manufacturer": "Cannon",
+    "model": "MF50",
+    "owner": "Albert Hoffman",
+    "quantity": 1,
+    "room": "112 Room"
+}
